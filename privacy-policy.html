@@ -71,7 +71,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy - e-Baiboly</h1>
-        <p class="last-updated">Last updated: 2026-04-12</p>
+        <p class="last-updated">Last updated: 2026-04-15</p>
 
         <p>e-Baiboly is a Bible and hymnal reader application. This privacy policy explains how we handle your data.</p>
 
@@ -83,6 +83,16 @@
             <li>No account is required.</li>
             <li>Your favorites, history, and settings are stored locally on your device.</li>
             <li>If you use the "Report issue" feature, the app may send the reported text/reference and your comment to the developer endpoint configured in the app.</li>
+        </ul>
+
+        <h2>Issue Reporting and Cloudflare</h2>
+        <p>The "Report issue" feature is optional. When you submit a report, the app sends your report over HTTPS to a developer endpoint hosted on Cloudflare Workers.</p>
+        <ul>
+            <li>Issue reports are intended for anonymous typographical/content corrections. No account is required and the app does not ask for your name, email address, phone number, or any other direct personal identifier when you submit a report.</li>
+            <li>The report payload may include: the selected verse/hymn reference, the displayed text, and your comment.</li>
+            <li>To protect the service from abuse, the Cloudflare Worker may process technical information such as your IP address (via Cloudflare request headers) for rate limiting.</li>
+            <li>Cloudflare, like most hosting providers, may also process standard server logs (for example IP address, request metadata, and user agent) for security and reliability.</li>
+            <li>The Cloudflare Worker forwards valid reports to the developer storage/processing service (for example a Google Apps Script endpoint) to help fix content issues and bugs.</li>
         </ul>
 
         <h2>How Data Is Used</h2>
