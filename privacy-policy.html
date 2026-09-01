@@ -105,10 +105,6 @@
             <p>Safidy ihany ny fampiasana ny "Manao fitarainana izay diso". Rehefa mandefa fitarainana ianao, dia alefan'ny rindrankajy amin'ny alalan'ny HTTPS ho any amin'ny "endpoint" an'ny "developeur", izay mitoetra ao amin'ny Cloudflare Workers.</p>
             <ul>
                 <li>Ny fitarainana dia natao ho an'ny fanitsiana lahatsoratra na votoaty tsy misy anarana. Tsy mila kaonty ianao ary tsy mangataka ny anaranao, ny mailakao, ny laharana finday, na inona na inona famantarana manokana mivantana rehefa mandefa fitarainana ianao.</li>
-                <li>Mety mahasahana ny anton'ny fitarainana: andininy/hira voafidy, ny lahatsoratra aseho, ary ny hevitrao.</li>
-                <li>Mba hiarovana ny tolotra amin'ny fanararaotana, ny Cloudflare Worker dia mety mandray angona ara-teknika toy ny adiresy IP-nao (amin'ny alalan'ny "header" fangatahan'i Cloudflare) ho an'ny fametrahana fetra.</li>
-                <li>Cloudflare, toy ny ankamaroan'ny mpanome tolotra "hosting", dia mety koa mandray "log" mahazatra (ohatra: adiresy IP, angona momba ny fangatahana, ary "user agent") ho an'ny fiarovana sy ny fahatokiana.</li>
-                <li>Ny Cloudflare Worker dia mandefa ny fitarainana marina any amin'ny tolotram-pitehirizana/fikirakirana an'ny "developeur" (ohatra: "endpoint" Google Apps Script) mba hanampiana hanitsiana ny olana amin'ny votoaty sy ny "bugs".</li>
             </ul>
 
             <h2>Fomba fampiasana ny données</h2>
@@ -189,10 +185,6 @@
             <p>The "Report issue" feature is optional. When you submit a report, the app sends your report over HTTPS to a developer endpoint hosted on Cloudflare Workers.</p>
             <ul>
                 <li>Issue reports are intended for anonymous typographical/content corrections. No account is required and the app does not ask for your name, email address, phone number, or any other direct personal identifier when you submit a report.</li>
-                <li>The report payload may include: the selected verse/hymn reference, the displayed text, and your comment.</li>
-                <li>To protect the service from abuse, the Cloudflare Worker may process technical information such as your IP address (via Cloudflare request headers) for rate limiting.</li>
-                <li>Cloudflare, like most hosting providers, may also process standard server logs (for example IP address, request metadata, and user agent) for security and reliability.</li>
-                <li>The Cloudflare Worker forwards valid reports to the developer storage/processing service (for example a Google Apps Script endpoint) to help fix content issues and bugs.</li>
             </ul>
 
             <h2>How Data Is Used</h2>
