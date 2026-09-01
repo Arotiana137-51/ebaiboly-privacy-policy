@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,81 +66,183 @@
         a:hover {
             text-decoration: underline;
         }
+        .lang-divider {
+            margin: 40px 0 20px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy - e-Baiboly</h1>
-        <p class="last-updated">Last updated: 2026-04-15</p>
+        <!-- Malagasy section mirrors src/screens/PrivacyPolicyScreen.tsx
+             (policyTextMg) — keep both in sync when editing either. -->
+        <section lang="mg">
+            <h1>Faneken'ny e-Baiboly hiaro ny tsiambaratelonao</h1>
+            <p>Politique de confidentialité</p>
+            <p class="last-updated">Nohavaozina farany: 2026-09-01</p>
 
-        <p>e-Baiboly is a Bible and hymnal reader application. This privacy policy explains how we handle your data.</p>
+            <p>Rindrankajy famakiana ny Baiboly sy ny fihirana ity. Zaraina maimaimpoana ary tsy misy zavatra amidy ao anatin'ny rindrankajy.</p>
 
-        <h2>App Description</h2>
-        <p>This app is a Bible and hymnal reader. It does not include in-app purchases or payments.</p>
+            <h2>Fahaleovantena</h2>
+            <ul>
+                <li>Ny e-Baiboly dia karakaraina sy zaraina an-tenany, tsy miankina amin'olon-kafa.</li>
+                <li>Azon'ny OLONA REHETRA ampiasaina ny e-Baiboly. Tsy mifamatotra amina antokom-pinoana, na fikambanana ara-pivavahana ny e-Baiboly</li>
+                <li>Tsy manavaka olona na antokom-pinoana ampiasa azy ary azonao ampiasaina any amin'ny toerana rehetra ny e-Baiboly.</li>
+                <li>Manaja sy manaraka ny rafitra sy ny fahefana misy any amin'ny firenena tsirairay ampiasana azy ny e-Baiboly (Hetra, haba...) kanefa tsy mifamatotra amina governemanta na antoko politika na firehan-kevitra.</li>
+                <li>Ny tanjony tokana dia ny fizarana an-kalalahana'ny soratra masina, ho an'ny olona rehetra.</li>
+            </ul>
 
-        <h2>Data Collected</h2>
-        <ul>
-            <li>No account is required.</li>
-            <li>Your favorites, history, and settings are stored locally on your device.</li>
-            <li>If you use the "Report issue" feature, the app may send the reported text/reference and your comment to the developer endpoint configured in the app.</li>
-        </ul>
+            <h2>Ny données angonina</h2>
+            <ul>
+                <li>Tsy mila kaonty ianao. Ary tsy mitahiry na maka "informations" momba anao izahay, hajainay ny "vie privée anao"</li>
+                <li>Ny ankafizinao, ny tantaram-pamakianao, ary ny fandrindrana dia tehirizina ao amin'ny finday ihany. Tsy misy makany amin'ny serveur ny e-Baiboly</li>
+                <li>Rehefa mampiasa ny teboka "Manao fitaterana izay diso" ihany ianao, vao mety halefan'ny rindrankajy any amin'ny "developeur" ny hevitrao. Isaorana mialoha noho izany ianao.</li>
+                <li>Tsy ampiasaina anaovana "entrainement na IA" ny données anao.</li>
+            </ul>
 
-        <h2>Issue Reporting and Cloudflare</h2>
-        <p>The "Report issue" feature is optional. When you submit a report, the app sends your report over HTTPS to a developer endpoint hosted on Cloudflare Workers.</p>
-        <ul>
-            <li>Issue reports are intended for anonymous typographical/content corrections. No account is required and the app does not ask for your name, email address, phone number, or any other direct personal identifier when you submit a report.</li>
-            <li>The report payload may include: the selected verse/hymn reference, the displayed text, and your comment.</li>
-            <li>To protect the service from abuse, the Cloudflare Worker may process technical information such as your IP address (via Cloudflare request headers) for rate limiting.</li>
-            <li>Cloudflare, like most hosting providers, may also process standard server logs (for example IP address, request metadata, and user agent) for security and reliability.</li>
-            <li>The Cloudflare Worker forwards valid reports to the developer storage/processing service (for example a Google Apps Script endpoint) to help fix content issues and bugs.</li>
-        </ul>
+            <h2>Ny fitaovana fanaovana fitarainana sy Cloudflare</h2>
+            <p>Safidy ihany ny fampiasana ny "Manao fitarainana izay diso". Rehefa mandefa fitarainana ianao, dia alefan'ny rindrankajy amin'ny alalan'ny HTTPS ho any amin'ny "endpoint" an'ny mpampandroso, izay mitoetra ao amin'ny Cloudflare Workers.</p>
+            <ul>
+                <li>Ny fitarainana dia natao ho an'ny fanitsiana lahatsoratra na votoaty tsy misy anarana. Tsy mila kaonty ianao ary tsy mangataka ny anaranao, ny mailakao, ny laharana finday, na inona na inona famantarana manokana mivantana rehefa mandefa fitarainana ianao.</li>
+                <li>Mety mahasahana ny anton'ny fitarainana: andininy/hira voafidy, ny lahatsoratra aseho, ary ny hevitrao.</li>
+                <li>Mba hiarovana ny tolotra amin'ny fanararaotana, ny Cloudflare Worker dia mety mandray angona ara-teknika toy ny adiresy IP-nao (amin'ny alalan'ny "header" fangatahan'i Cloudflare) ho an'ny fametrahana fetra.</li>
+                <li>Cloudflare, toy ny ankamaroan'ny mpanome tolotra "hosting", dia mety koa mandray "log" mahazatra (ohatra: adiresy IP, angona momba ny fangatahana, ary "user agent") ho an'ny fiarovana sy ny fahatokiana.</li>
+                <li>Ny Cloudflare Worker dia mandefa ny fitarainana marina any amin'ny tolotram-pitehirizana/fikirakirana an'ny mpampandroso (ohatra: "endpoint" Google Apps Script) mba hanampiana hanitsiana ny olana amin'ny votoaty sy ny "bugs".</li>
+            </ul>
 
-        <h2>How Data Is Used</h2>
-        <ul>
-            <li>Favorites, history, and settings are used to provide personalized reading and navigation within the app.</li>
-            <li>Reported issues are used to improve app quality and fix bugs.</li>
-        </ul>
+            <h2>Fomba fampiasana ny données</h2>
+            <ul>
+                <li>Ny ankafizinao, ny tantara, ary ny fandrindrana dia ampiasaina hanomezana traikefa famakiana sy fitetezana manokana ao anatin'ny rindrankajy.</li>
+                <li>Ny fitaterana izay diso voaray dia ampiasaina hanatsarana ny kalitaon'ny rindrankajy sy hanitsiana izay diso.</li>
+            </ul>
 
-        <h2>Data Security</h2>
-        <ul>
-            <li>All data is stored locally on your device and encrypted where supported.</li>
-            <li>Data transmitted for reporting is sent over HTTPS.</li>
-            <li>No personal or sensitive data is sold to third parties.</li>
-        </ul>
+            <h2>Fiarovana ny données</h2>
+            <ul>
+                <li>Ny données rehetra dia tehirizina ao amin'ny finday ary voaaro raha misy izany "(encrypted)".</li>
+                <li>Ny données alefa ho an'ny fitanterana izay diso dia mandeha amin'ny alalan'ny HTTPS.</li>
+                <li>Tsy misy données manokana na saro-pady amidy amin'ny olona ivelan'ny e-Baiboly.</li>
+            </ul>
 
-        <h2>Data Retention and Deletion</h2>
-        <ul>
-            <li>Your favorites, history, and settings are stored locally and will remain on your device until you uninstall the app or clear app data.</li>
-            <li>Reported issue data may be retained by the developer for bug fixing purposes.</li>
-        </ul>
+            <h2>Fitehirizana sy famafana ny données</h2>
+            <ul>
+                <li>Ny ankafizinao, ny tantara, ary ny fandrindrana dia mijanona ao amin'ny finday mandra-panesoranao ny rindrankajy na famafana ny angon-drindrankajy.</li>
+                <li>Ny angon'ny fitaterana izay diso dia mety hotehirizin'ny mpampandroso mba hanitsiana ny olana.</li>
+            </ul>
 
-        <h2>Your Rights</h2>
-        <ul>
-            <li>You can access, modify, or delete your locally stored data at any time by clearing app data in your device settings.</li>
-            <li>You can uninstall the app at any time to remove all locally stored data.</li>
-        </ul>
+            <h2>Ny zonao</h2>
+            <ul>
+                <li>Azonao jerena, ovaina, na fafana ny donnéeso tehirizina ao amin'ny finday, amin'ny alalan'ny famafana ny angon-drindrankajy ao amin'ny paramaetatry ny finday.</li>
+                <li>Azonao esorina ny rindrankajy amin'ny fotoana rehetra mba hanesorana ny données rehetra tehirizina ao amin'ny finday.</li>
+            </ul>
 
-        <h2>Permissions</h2>
-        <ul>
-            <li>Internet access may be used for optional features (for example, reporting).</li>
-        </ul>
+            <h2>Fahazoan-dalana</h2>
+            <ul>
+                <li>Ny fifandraisana Internet dia mety ampiasaina ho an'ny endri-drindrankajy tsy tery (ohatra: ny fitarainana).</li>
+                <li>Ny rindrankajy dia mety mangataka fahazoan-dalana hampiseho fampahatsiarovana ("Ora famakiana tiana") — angataina IHANY IZAY raha alefanao io endri-drindrankajy tsy an-tery io. Fampahatsiarovana ao amin'ny finday ihany io, tsy misy données alefa na angonina.</li>
+            </ul>
 
-        <h2>Third-Party Services</h2>
-        <ul>
-            <li>The app may use third-party libraries required for functionality. No advertising SDK is included by default.</li>
-            <li>Third-party libraries do not have access to your personal data beyond what is necessary for their functionality.</li>
-        </ul>
+            <h2>Tolotra avy amin'ny olona ivelan'ny e-Baiboly</h2>
+            <ul>
+                <li>Ny rindrankajy dia mety mampiasa tahirin-kevitra avy amin'ny olona ivelan'ny e-Baiboly ilaina amin'ny fiasany. Tsy misy SDK dob ampiasaina.</li>
+                <li>Ny tahirin-kevitra avy amin'ny olona ivelan'ny e-Baiboly dia tsy afaka mahazo ny donnéeso manokana ankoatra izay ilaina amin'ny fiasany.</li>
+            </ul>
 
-        <h2>Changes to This Policy</h2>
-        <ul>
-            <li>We may update this policy. Significant changes will be notified in the app.</li>
-            <li>The last updated date at the top of this policy indicates when changes were made.</li>
-        </ul>
+            <h2>Fanovana ity politika ity</h2>
+            <ul>
+                <li>Mety hohavaozinay ity politika ity. Ny fanovana lehibe dia hampahafantarina ao anatin'ny rindrankajy.</li>
+                <li>Ny daty voalaza eo ambony dia manondro ny fotoana nanaovana ny fanovana farany.</li>
+            </ul>
 
-        <div class="contact">
-            <h2>Contact</h2>
-            <p>If you have questions about this privacy policy, contact: <a href="mailto:arotianarandria@proton.me">arotianarandria@proton.me</a></p>
-        </div>
+            <div class="contact">
+                <h2>Fifandraisana</h2>
+                <p>Raha manana fanontaniana ianao, antsoy: <a href="mailto:arotianarandria@proton.me">arotianarandria@proton.me</a></p>
+            </div>
+        </section>
+
+        <section lang="en" class="lang-divider">
+            <h1>Privacy Policy - e-Baiboly</h1>
+            <p class="last-updated">Last updated: 2026-09-01</p>
+
+            <p>e-Baiboly is a Bible and hymnal reader application. This privacy policy explains how we handle your data.</p>
+
+            <h2>App Description</h2>
+            <p>This app is a Bible and hymnal reader. It does not include in-app purchases or payments.</p>
+
+            <h2>Independence</h2>
+            <ul>
+                <li>e-Baiboly is developed and distributed independently, not dependent on any outside party.</li>
+                <li>e-Baiboly can be used by EVERYONE. It is not affiliated with any faith community or religious organization.</li>
+                <li>It does not discriminate against any person or faith community who uses it, and it can be used anywhere.</li>
+                <li>It respects and complies with the laws and authorities of each country it is used in (taxes, duties, etc.), but is not affiliated with any government, political party, or political movement.</li>
+                <li>Its sole purpose is the free distribution of scripture, for everyone.</li>
+            </ul>
+
+            <h2>Data Collected</h2>
+            <ul>
+                <li>No account is required.</li>
+                <li>Your favorites, history, and settings are stored locally on your device.</li>
+                <li>If you use the "Report issue" feature, the app may send the reported text/reference and your comment to the developer endpoint configured in the app.</li>
+            </ul>
+
+            <h2>Issue Reporting and Cloudflare</h2>
+            <p>The "Report issue" feature is optional. When you submit a report, the app sends your report over HTTPS to a developer endpoint hosted on Cloudflare Workers.</p>
+            <ul>
+                <li>Issue reports are intended for anonymous typographical/content corrections. No account is required and the app does not ask for your name, email address, phone number, or any other direct personal identifier when you submit a report.</li>
+                <li>The report payload may include: the selected verse/hymn reference, the displayed text, and your comment.</li>
+                <li>To protect the service from abuse, the Cloudflare Worker may process technical information such as your IP address (via Cloudflare request headers) for rate limiting.</li>
+                <li>Cloudflare, like most hosting providers, may also process standard server logs (for example IP address, request metadata, and user agent) for security and reliability.</li>
+                <li>The Cloudflare Worker forwards valid reports to the developer storage/processing service (for example a Google Apps Script endpoint) to help fix content issues and bugs.</li>
+            </ul>
+
+            <h2>How Data Is Used</h2>
+            <ul>
+                <li>Favorites, history, and settings are used to provide personalized reading and navigation within the app.</li>
+                <li>Reported issues are used to improve app quality and fix bugs.</li>
+            </ul>
+
+            <h2>Data Security</h2>
+            <ul>
+                <li>All data is stored locally on your device and encrypted where supported.</li>
+                <li>Data transmitted for reporting is sent over HTTPS.</li>
+                <li>No personal or sensitive data is sold to third parties.</li>
+            </ul>
+
+            <h2>Data Retention and Deletion</h2>
+            <ul>
+                <li>Your favorites, history, and settings are stored locally and will remain on your device until you uninstall the app or clear app data.</li>
+                <li>Reported issue data may be retained by the developer for bug fixing purposes.</li>
+            </ul>
+
+            <h2>Your Rights</h2>
+            <ul>
+                <li>You can access, modify, or delete your locally stored data at any time by clearing app data in your device settings.</li>
+                <li>You can uninstall the app at any time to remove all locally stored data.</li>
+            </ul>
+
+            <h2>Permissions</h2>
+            <ul>
+                <li>Internet access may be used for optional features (for example, reporting).</li>
+                <li>The app may request notification permission to show a reminder ("Ora famakiana tiana" / preferred reading-time reminder). This is only requested if you turn that optional feature on. The reminder is delivered entirely on your device — nothing is collected or transmitted for it.</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <ul>
+                <li>The app may use third-party libraries required for functionality. No advertising SDK is included by default.</li>
+                <li>Third-party libraries do not have access to your personal data beyond what is necessary for their functionality.</li>
+            </ul>
+
+            <h2>Changes to This Policy</h2>
+            <ul>
+                <li>We may update this policy. Significant changes will be notified in the app.</li>
+                <li>The last updated date at the top of this policy indicates when changes were made.</li>
+            </ul>
+
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>If you have questions about this privacy policy, contact: <a href="mailto:arotianarandria@proton.me">arotianarandria@proton.me</a></p>
+            </div>
+        </section>
     </div>
 </body>
 </html>
